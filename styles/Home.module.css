@@ -1,0 +1,113 @@
+.Home {
+  text-align: -webkit-center;
+}
+
+.imageContainer {
+  text-align-last: center;
+}
+
+.imageContainer {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  align-content: center;
+}
+
+.imageContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../public/images/tec-image-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1; 
+}
+
+.imageContainer h1 {
+  font-size: 110px;
+  text-transform: uppercase;
+}
+
+.containerAbout {
+  padding: 90px 0;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; */
+  place-items: center;
+  width: 50%;
+}
+
+.containerAbout .retratoContainer img{
+  width: 350px;
+  border-radius: 10px;
+}
+
+.containerAbout h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.containerAbout p {
+  margin-bottom: 15px;
+}
+
+.textContainer {
+  flex: 1 1 50%; /* Ocupa 50% da largura */
+  max-width: 70%;
+  padding: 20px;
+}
+
+.textContainer p {
+  font-size: 21px;
+}
+
+@media (max-width: 768px) {
+  .About h1 {
+      font-size: 50px;
+  }
+
+  .textContainer {
+  flex: 1 1 100%;
+  max-width: 100%;
+  }
+}
+
+.Projects {
+  margin: 40px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.Projects h1 {
+  margin-top: 60px;
+  font-size: 110px;
+  text-transform: uppercase;
+}
+
+.ContainerCards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Projects h1 {
+      margin-top: 60px;
+      font-size: 50px;
+      text-transform: uppercase;
+  }
+
+  .ContainerCards {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Duas colunas */
+      gap: 20px;
+  }
+  
+}
